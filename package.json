@@ -1,13 +1,19 @@
 {
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
-  "scripts": {},
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install"
+  },
   "dependencies": {
+    "pnpm": "^8.15.5",
     "vue": "^3.4.21"
   },
   "devDependencies": {
+    "@mistjs/eslint-config": "^1.0.0",
     "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^8.55.0",
+    "husky": "^8.0.3",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vue-tsc": "^2.0.6"
