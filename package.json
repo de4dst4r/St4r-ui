@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "dependencies": {
     "pnpm": "^8.15.5",
@@ -17,9 +20,12 @@
     "lint-staged": "^15.2.2",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
+    "vitepress": "^1.0.1",
     "vue-tsc": "^2.0.6"
   },
   "lint-staged": {
-    "./**/*.{js, ts, vue,tsx, jsx, css, less, json}" : ["eslint --fix"]
+    "./**/*.{js, ts, vue,tsx, jsx, css, less, json}": [
+      "eslint --fix"
+    ]
   }
 }
