@@ -7,6 +7,12 @@
       "DOM",
       "DOM.Iterable"
     ],
+    "baseUrl": "."  ,
+    "paths":{
+      "@tov-ui/utils":[
+        "packages/utils/src/index.ts"
+      ]
+    },
     "useDefineForClassFields": true,
     "module": "ESNext",
     /* Bundler mode */
@@ -21,6 +27,7 @@
     "noEmit": true,
     "isolatedModules": true,
     "skipLibCheck": true
+
   },
   "references": [
     {

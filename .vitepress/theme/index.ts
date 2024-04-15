@@ -1,7 +1,9 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from 'vue'
+
+import { AntdTheme } from 'vite-plugin-vitepress-demo/theme'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
+import { h } from 'vue'
 import './style.css'
 
 export default {
@@ -11,7 +13,8 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
-  enhanceApp({ app, router, siteData }) {
+  enhanceApp({ app}) {
     // ...
+    app.component('Demo', AntdTheme);
   }
 } satisfies Theme
