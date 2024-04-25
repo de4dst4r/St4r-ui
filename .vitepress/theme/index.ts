@@ -5,6 +5,8 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
 import './style.css'
+import tov from 'tov-ui'
+import 'tov-ui/styles.ts'
 
 export default {
   extends: DefaultTheme,
@@ -13,8 +15,9 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
-  enhanceApp({ app}) {
+  enhanceApp({ app }) {
     // ...
-    app.component('Demo', AntdTheme);
-  }
+    app.component('Demo', AntdTheme)
+    app.use(tov)
+  },
 } satisfies Theme

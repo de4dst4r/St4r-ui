@@ -2,10 +2,14 @@
   "extends": [
     "../../tsconfig.json"
   ],
-  "compilerOptions": {},
+  "compilerOptions": {
+    "rootDir": "./src"
+  },
   "include": [
+    "./src/**/*.ts",
     "src/**/*.ts",
     "src/**/*.tsx",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "src/**/*.json"
   ]
 }

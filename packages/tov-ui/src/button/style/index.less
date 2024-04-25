@@ -1,0 +1,84 @@
+@import "../../style/index.less";
+.tov-button {
+    background:none;
+    cursor:pointer;
+    border: 1px solid var(--tov-color-border);
+    outline: none;
+    color:inherit;
+    padding: 4px 8px;
+    border-radius: 4px;
+    height: 32px;
+    display: inlilne-flex;
+    text-align: center;
+
+    &-size{
+        &--small{
+            height: 24px;
+            padding: 2px 4px;
+            font-size:12px;
+        }
+
+        &--large{
+            height: 40px;
+            padding: 6px 12px;
+            font-size:28px;
+        }
+
+    }
+    &--default {
+        border-color:  var(--tov-color-border);
+        color: var(--tov-primary-text);
+
+        &:hover{
+            border-color: var(--tov-color-primary-hover);
+            color: var(--tov-color-primary-hover)
+        }
+
+        &:active {
+            border-color: var(--tov-color-primary-active);
+            color: var(--tov-color-primary-active);
+        }
+    }
+    
+    &--dashed {
+        border-style:dashed;
+        border-color:  var(--tov-color-border);
+        color: var(--tov-primary-text);
+
+        &:hover{
+            border-color: var(--tov-color-primary-hover);
+            color: var(--tov-color-primary-hover)
+        }
+
+        &:active {
+            border-color: var(--tov-color-primary-active);
+            color: var(--tov-color-primary-active);
+        }
+    }
+
+    &--primary {
+        border-color:  var(--tov-color-primary);
+        color: #fff;
+        background-color: var(--tov-color-primary);
+
+        &:hover{
+            border-color: var(--tov-color-primary-hover);
+            background-color: var(--tov-color-primary-hover);
+        }
+
+        &:active {
+            border-color: var(--tov-color-primary-active);
+            background-color: var(--tov-color-primary-active);
+
+        }
+    }
+
+    &:disabled{
+        cursor: not-allowed;
+        border-color:  #d9d9d9;
+        color: #bfbfbf;
+        background-color: #f0f0f0;
+    }
+}
+
+

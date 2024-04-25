@@ -1,4 +1,1 @@
-export function test(){
-    // 测试
-    console.log("test");
-}
+export { useClassnames } from './gen-class'

@@ -1,24 +1,24 @@
+import fs from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { gold, green, purple, red } from '@ant-design/colors'
-import fs from 'fs'
-import path from 'path'
-import { fileURLToPath } from 'url'
 
-let colors =''
-purple.forEach((color,index) => {
-    colors += `--tov-color-primary-${++index}: ${color};\n`
-    color +='\n'
+let colors = ''
+purple.forEach((color, index) => {
+  colors += `--tov-color-primary-${++index}: ${color};\n`
+  color += '\n'
 })
 
-green.forEach((color,index) => {
-    colors += `--tov-color-success-${++index}: ${color};\n`
+green.forEach((color, index) => {
+  colors += `--tov-color-success-${++index}: ${color};\n`
 })
-gold.forEach((color,index) => {
-    colors += `--tov-color-warning-${++index}: ${color};\n`
-    color +='\n'
+gold.forEach((color, index) => {
+  colors += `--tov-color-warning-${++index}: ${color};\n`
+  color += '\n'
 })
-red.forEach((color,index) => {
-    colors += `--tov-color-error-${++index}: ${color};\n`
-    color +='\n'
+red.forEach((color, index) => {
+  colors += `--tov-color-error-${++index}: ${color};\n`
+  color += '\n'
 })
 
 const baseURL = fileURLToPath(new URL('../', import.meta.url))
