@@ -3,6 +3,8 @@
 title: 输入框组件
 ---
 这是一个`input`组件的使用Demo
+
+##### 以及slot 前后插槽的使用
 </docs>
 
 <script setup lang="ts">
@@ -13,9 +15,9 @@ const value = ref('')
 
 <template>
   <div>
-    输入信息:{{ value }}
-    <!-- <TovInput v-model="value" disabled /> -->
+    value:{{ value }}
     <TovInput v-model="value" />
-    <!-- <TovInput /> -->
+    <TovInput v-model="value" size="large" />
+    <TovInput v-model="value" size="small" />
   </div>
 </template>

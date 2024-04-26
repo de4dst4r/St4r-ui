@@ -5,19 +5,10 @@ title: 按钮组件
   按钮组件，用于触发操作。
 </docs>
 
-<script lang="ts">
-import TovButton from '../TovButton.vue'
-import '../style/index.less'
-
-export default {
-  components: {
-    TovButton,
-  },
-  methods: {
-    handleClick() {
-      console.log('按钮被点击了')
-    },
-  },
+<script setup lang="ts">
+function
+handleClick() {
+  console.log('按钮被点击了')
 }
 </script>
 

@@ -1,8 +1,8 @@
 <docs>
 ---
-title: 输入框组件
+title: 禁用状态
 ---
-这是一个`input`组件的使用Demo
+`input`组件的禁用状态案例
 </docs>
 
 <script setup lang="ts">
@@ -14,8 +14,8 @@ const value = ref('')
 <template>
   <div>
     输入信息:{{ value }}
-    <!-- <TovInput v-model="value" disabled /> -->
-    <TovInput v-model="value" />
+    <TovInput v-model="value" disabled />
+    <!-- <TovInput v-model="value" /> -->
     <!-- <TovInput /> -->
   </div>
 </template>

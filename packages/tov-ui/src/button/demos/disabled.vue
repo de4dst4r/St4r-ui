@@ -6,19 +6,10 @@ title: 禁用状态
 设置'disabled'属性为true来禁用按钮。
 </docs>
 
-<script lang="ts">
-import TovButton from '../TovButton.vue'
-import '../style/index.less'
-
-export default {
-  components: {
-    TovButton,
-  },
-  methods: {
-    handleClick() {
-      console.log('按钮被点击了')
-    },
-  },
+<script setup lang="ts">
+function
+handleClick() {
+  console.log('按钮被点击了')
 }
 </script>
 

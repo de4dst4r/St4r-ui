@@ -1,3 +1,63 @@
-.tov-input{
-    background-color: red;
+.tov-TovInput{
+    display: inline-flex;
+    box-sizing: border-box;
+    align-items: center;
+    border: 1px solid var(--tov-color-primary);
+    padding: 10px;
+    cursor: text;
+    font-size: 16px;
+    height: 28px;
+    line-height: 1;
+    border-radius: 5px;
+    &--large{
+        font-size: 18px;
+        height: 40px;
+        line-height: 2;
+        padding: 4px;
+    }
+
+    &--small{
+        font-size: 14px;
+        height: 24px;
+        padding: 4px;
+    }
+
+    &--large &__prefix{
+        margin-right: 4px;
+    }
+
+    &--large &__suffix{
+        margin-right: 4px;
+    }
+
+    &__prefix{
+        margin-right: 8px;
+    }
+
+    &__suffix{
+        margin-left: 8px;
+    }
+
+    input{
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+    }
+
+    &--disabled {
+        cursor: not-allowed;
+        color: var(--tov-color-text-disabled);
+        border-color: var(--tov-color-text-disabled);
+        background: #bfbfbf;
+    }
+
+    &:focus-within{
+        border-color: var(--tov-color-text-disabled);
+    }
+
+    &-input {
+        &:disabled {
+            cursor: not-allowed;
+        }
+    }
 }

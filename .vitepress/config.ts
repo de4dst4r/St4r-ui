@@ -22,11 +22,11 @@ export default defineConfig({
       '/components/': [
         {
           text: '按钮',
-          link: '/components/button/index',
+          link: '/components/button/',
         },
         {
           text: '输入框',
-          link: '/components/input/index',
+          link: '/components/input/',
         },
       ],
       '/utils/': [
@@ -38,7 +38,8 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      // { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      { icon: 'github', link: 'https://github.com/de4dst4r/tov-ui' },
     ],
   },
 })

@@ -3,9 +3,10 @@
 layout: home
 
 hero:
-  name: "Tov UI"
-  text: "vue component library"
-  tagline: My great project tagline
+  name: "de4dst4r's vue component library"
+  # text: "Antd based secondary packaging component library"
+  text: "基于Antd二次封装的组件库"
+  tagline: Say it, do it.
   actions:
     - theme: brand
       text: Markdown Examples
