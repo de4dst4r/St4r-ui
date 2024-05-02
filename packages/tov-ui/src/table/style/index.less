@@ -1,0 +1,38 @@
+@import "../../style/index.less";
+
+.tov-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #fff;
+  &-cell{
+    padding:16px;
+    border-bottom: 1px solid #f0f0f0
+  }
+  &-header {
+    box-sizing: border-box;
+
+    &-cell {
+      position:relative;
+      background-color: #fafafa80;
+
+      &:not(:last-child){
+        &::before{
+          content: '';
+          position: absolute;        
+          width: 1px;
+          right: 0;
+          top: 50%;
+          height: 1.5rem;
+          transform: translateY(-50%);
+          background-color: #7bc2f9;
+        }
+      }
+      
+
+/*       &:last-child::before{
+        display: none;
+      } */
+    }
+  }
+}

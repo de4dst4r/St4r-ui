@@ -65,56 +65,13 @@
   --tov-color-divider: #0505050F;
   --tov-color-bg: #F5F5F5FF;
 }
-.tov-TovInput {
-  display: inline-flex;
-  box-sizing: border-box;
-  align-items: center;
-  border: 1px solid var(--tov-color-primary);
-  padding: 10px;
-  cursor: text;
-  font-size: 16px;
-  height: 28px;
-  line-height: 1;
-  border-radius: 5px;
-}
-.tov-TovInput--large {
-  font-size: 18px;
-  height: 40px;
-  line-height: 2;
-  padding: 4px;
-}
-.tov-TovInput--small {
+.tov-Tooltip {
+  background-color: rgba(146, 45, 214, 0.85);
   font-size: 14px;
-  height: 24px;
-  padding: 4px;
-}
-.tov-TovInput--large .tov-TovInput__prefix {
-  margin-right: 4px;
-}
-.tov-TovInput--large .tov-TovInput__suffix {
-  margin-right: 4px;
-}
-.tov-TovInput__prefix {
-  margin-right: 8px;
-}
-.tov-TovInput__suffix {
-  margin-left: 8px;
-}
-.tov-TovInput input {
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-}
-.tov-TovInput--disabled {
-  cursor: not-allowed;
-  color: var(--tov-color-text-disabled);
-  border-color: var(--tov-color-text-disabled);
-  background: #bfbfbf;
-}
-.tov-TovInput:focus-within {
-  border-color: var(--tov-color-text-disabled);
-}
-.tov-TovInput-input:disabled {
-  cursor: not-allowed;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.85), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 9px 28px rgba(0, 0, 0, 0.03);
+  color: #fff;
 }
 /*# sourceMappingURL=./index.css.map */
