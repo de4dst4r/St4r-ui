@@ -12,7 +12,7 @@
     ".vitepress/**/*.less",
     "packages/tov-ui/src/**/*.ts",
     "packages/tov-ui/src/**/*.tsx",
-    "packages/tov-ui/src/**/*.vue",
+    "packages/**/src/**/*.vue",
     "packages/tov-ui/src/**/*.js",
     "packages/tov-ui/src/**/*.jsx"
   ]

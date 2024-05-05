@@ -7,7 +7,9 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "genColors": "esno scripts/gen-colors.ts"
+    "genColors": "esno scripts/gen-colors.ts",
+    "test": "vitest",
+    "coverage": "vitest --coverage"
   },
   "dependencies": {
     "pnpm": "^8.15.5"
@@ -19,19 +21,24 @@
     "@v-c/utils": "^0.0.26",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "@vue/test-utils": "^2.4.5",
     "classnames": "^2.5.1",
     "eslint": "^8.55.0",
     "esno": "^4.7.0",
     "husky": "^8.0.3",
+    "jsdom": "^24.0.0",
     "less": "^4.2.0",
     "lint-staged": "^15.2.2",
     "postcss": "^8.4.38",
     "proptypes": "^1.1.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.9.0",
     "vite-plugin-tsx-resolve-types": "^0.0.2",
     "vite-plugin-vitepress-demo": "^2.2.1",
     "vitepress": "^1.0.1",
+    "vitest": "^1.6.0",
     "vue": "^3.4.21",
     "vue-tsc": "^2.0.6"
   },

@@ -8,6 +8,8 @@ export default defineConfig({
     'docs/(.*)': '(.*)',
     'packages/tov-ui/src/:comp/(.*)': 'components/:comp/(.*)',
     'packages/utils/src/(.*)': 'utils/(.*)',
+    'packages/icons/docs/(.*)': 'components/icons/(.*)',
+
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -35,6 +37,18 @@ export default defineConfig({
         {
           text: '表格',
           link: '/components/table/',
+        },
+        {
+          text: '虚拟列表',
+          link: '/components/virtual-list/',
+        },
+        {
+          text: '通知',
+          link: '/components/notification/',
+        },
+        {
+          text: '图标',
+          link: '/components/icons/',
         },
       ],
       '/utils/': [
