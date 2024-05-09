@@ -10,6 +10,9 @@
     "vue3",
     "icons"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "types": "./es/index.d.ts",
