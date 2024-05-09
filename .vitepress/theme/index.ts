@@ -5,6 +5,7 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
 import './style.css'
+
 import tov from 'tov-ui'
 import 'tov-ui/styles.ts'
 

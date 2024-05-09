@@ -1,8 +1,8 @@
 <script setup  lang="ts">
 import { ref } from 'vue'
-import { useClassNames } from '../gen-class'
+import { useClassnames } from '../gen-class'
 
-const { c, cx, ce, cm } = useClassNames('gen-class')
+const { c, cx, ce, cm } = useClassnames('gen-class')
 const str = 'Modifier'
 const testRef = ref(false)
 function handleClick() {
