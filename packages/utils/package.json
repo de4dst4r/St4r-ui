@@ -1,12 +1,25 @@
 {
   "name": "@st4r-ui/utils",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
-  "author": "",
-  "license": "ISC",
-  "main": "index.js",
+  "author": "de4dst4r <de4dst4r@outlook.com>",
+  "license": "MIT",
+  "publishConfig": { "access": "public" },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "./packages.json": "./packages.json",
+  "main": "dist/index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "unbuild"
+  },
+  "peerDependencies": {
+    "vue": ">=3.0.0"
   },
   "dependencies": {
     "classnames": "^2.5.1"
