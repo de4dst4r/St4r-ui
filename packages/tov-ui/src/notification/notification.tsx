@@ -1,5 +1,5 @@
 import { TransitionGroup, defineComponent, onMounted, ref } from 'vue'
-import { useClassnames } from '@tov-ui/utils'
+import { useClassnames } from '@st4r-ui/utils'
 import type { NotificationConfig, NotificationConfigType, NotificationInstance } from './interface'
 
 export const Notification = defineComponent<{

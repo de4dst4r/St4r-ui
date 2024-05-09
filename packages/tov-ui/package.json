@@ -1,10 +1,33 @@
 {
-  "name": "tov-ui",
+  "name": "st4r-ui",
+  "type": "module",
   "version": "1.0.0",
-  "description": "",
-  "author": "",
-  "license": "ISC",
-  "main": "index.js",
+  "description": "This is a vue3 component library",
+  "author": "de4dst4r <de4dst4r@outlook.com>",
+  "license": "MIT",
+  "keywords": [
+    "vue3",
+    "components",
+    "ui",
+    "library"],
+  "exports": {
+    ".": {
+      "types": "./es/index.d.ts",
+      "import": "./es/index.js",
+      "require": "./lib/index.js"
+    },
+    "./es/*": "./es/*",
+    "./lib/*": "./lib/*",
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json"
+  },
+  "main": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "dist",
+    "es",
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build",
@@ -14,6 +37,8 @@
   },
   "dependencies": {
     "@floating-ui/vue": "^1.0.6",
+    "@st4r-ui/utils": "workspace:*",
+    "@v-c/utils": "^0.0.26",
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {

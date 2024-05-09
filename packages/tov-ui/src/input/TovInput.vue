@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { nextTick, onMounted, ref } from 'vue'
-import { useClassnames } from '@tov-ui/utils'
+import { useClassnames } from '@st4r-ui/utils'
 import { omit, pick } from 'lodash-es'
 import type { InputProps } from './interface'
 import { originInputProps } from './interface'

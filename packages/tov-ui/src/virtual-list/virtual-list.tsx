@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'vue'
 import { computed, defineComponent, onMounted, onUnmounted, ref } from 'vue'
-import { useClassnames } from '@tov-ui/utils'
+import { useClassnames } from '@st4r-ui/utils'
 
 export default defineComponent({
   name: 'TovVirtuallist',

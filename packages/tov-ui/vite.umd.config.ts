@@ -11,9 +11,10 @@ export default defineConfig({ plugins: [
   vue(),
   vueJsx(),
   tsxResolveTypes(),
+
 ], resolve: { alias: [
   {
-    find: /^@tov-ui\/utils/,
+    find: /^@st4r-ui\/utils/,
     replacement: path.resolve(baseUrl, '../utils/src'),
   },
 ] }, build: {

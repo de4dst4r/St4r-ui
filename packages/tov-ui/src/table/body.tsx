@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import { useClassnames } from '@tov-ui/utils'
+import { useClassnames } from '@st4r-ui/utils'
 import type { BodyProps } from './interface'
 
 export const Body = defineComponent<BodyProps>({

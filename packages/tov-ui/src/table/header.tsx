@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import { useClassnames } from '@tov-ui/utils'
+import { useClassnames } from '@st4r-ui/utils'
 import type { HeaderProps } from './interface'
 
 export const Header = defineComponent<HeaderProps>({

@@ -9,11 +9,11 @@ export default [
     replacement: path.resolve(baseUrl, 'packages/tov-ui/src'),
   },
   {
-    find: /^@tov-ui\/utils/,
+    find: /^@st4r-ui\/utils/,
     replacement: path.resolve(baseUrl, 'packages/utils/src'),
   },
   {
-    find: /^@tov-ui\/icons/,
+    find: /^@st4r-ui\/icons/,
     replacement: path.resolve(baseUrl, 'packages/icons/src'),
   },
 ]

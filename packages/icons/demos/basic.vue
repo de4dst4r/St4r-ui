@@ -7,7 +7,7 @@ title: 图标
 </docs>
 
 <script setup lang="ts">
-import { IconConfig } from '@tov-ui/icons'
+import { IconConfig } from '@st4r-ui/icons'
 </script>
 
 <template>

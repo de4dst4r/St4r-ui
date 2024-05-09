@@ -11,8 +11,8 @@
     /* Bundler mode */
     "moduleResolution": "bundler",
     "paths": {
-      "@tov-ui/utils": ["packages/utils/src"],
-      "@tov-ui/icons": ["packages/icons/src"],
+      "@st4r-ui/utils": ["packages/utils/src"],
+      "@st4r-ui/icons": ["packages/icons/src"],
       "tov-ui": ["packages/tov-ui/src"],
       "tov-ui/*": ["packages/tov-ui/src/*"]
     },

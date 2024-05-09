@@ -2,14 +2,20 @@ import { defineConfig } from 'vite'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import tsxResolveTypes from 'vite-plugin-tsx-resolve-types'
 import vue from '@vitejs/plugin-vue'
+import dts from 'vite-plugin-dts'
 
 export default defineConfig({ plugins: [
   vue(),
   vueJsx(),
   tsxResolveTypes(),
+  dts({
+    entryRoot: 'src',
+    outDir: ['es', 'lib'],
+    exclude: ['**/tests/**'],
+  }),
 ], build: {
   rollupOptions: {
-    external: ['vue', '@floating-ui/vue', '@v-c/utils', 'lodash-es', '@tov-ui/utils', '@tov-ui/icons'],
+    external: ['vue', '@floating-ui/vue', '@v-c/utils', 'lodash-es', '@st4r-ui/utils', '@st4r-ui/icons'],
     output: [
       {
         preserveModules: true,
