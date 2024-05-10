@@ -1,7 +1,7 @@
 {
   "name": "st4r-ui",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a vue3 component library",
   "author": "de4dst4r <de4dst4r@outlook.com>",
   "license": "MIT",
@@ -36,7 +36,7 @@
 
   },
   "dependencies": {
-    "@floating-ui/vue": "^1.0.6",
+    "@floating-ui/vue": "^1.0.2",
     "@st4r-ui/utils": "workspace:*",
     "@v-c/utils": "^0.0.26",
     "lodash-es": "^4.17.21"

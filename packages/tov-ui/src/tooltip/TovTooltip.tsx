@@ -21,14 +21,14 @@ export default defineComponent({
     },
   },
   setup(props, { slots }) {
-    const reference = ref(null)
-    const floating = ref(null)
+    const reference = ref<HTMLDivElement>()
+    const floating = ref<HTMLDivElement>()
     const show = ref(false)
     const placement = computed(() => props.placement)
     const { c } = useClassnames('Tooltip')
     const { floatingStyles } = useFloating(reference, floating, {
       placement,
-      middleware: [offset(5)],
+      middleware: [offset(4)],
     })
     let timer: ReturnType<typeof setTimeout> | undefined
     const handleMouseEnter = () => {
