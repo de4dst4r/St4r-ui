@@ -10,14 +10,25 @@
     "genColors": "esno scripts/gen-colors.ts",
     "test": "vitest",
     "coverage": "vitest --coverage",
-    "build:style": "esno ./scripts/css-bundle.ts"
+    "build:style": "esno ./scripts/css-bundle.ts",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "pnpm": "^8.15.5"
   },
   "devDependencies": {
     "@ant-design/colors": "^7.0.2",
+    "@chromatic-com/storybook": "1.6.1",
     "@mistjs/eslint-config": "^1.0.0",
+    "@storybook/addon-essentials": "^8.2.6",
+    "@storybook/addon-interactions": "^8.2.6",
+    "@storybook/addon-links": "^8.2.6",
+    "@storybook/addon-onboarding": "^8.2.6",
+    "@storybook/blocks": "^8.2.6",
+    "@storybook/test": "^8.2.6",
+    "@storybook/vue3": "^8.2.6",
+    "@storybook/vue3-vite": "^8.2.6",
     "@types/fs-extra": "^11.0.4",
     "@types/less": "^3.0.6",
     "@types/node": "^20.12.7",
@@ -28,6 +39,7 @@
     "@vue/test-utils": "^2.4.5",
     "classnames": "^2.5.1",
     "eslint": "^8.55.0",
+    "eslint-plugin-storybook": "^0.8.0",
     "esno": "^4.7.0",
     "fast-glob": "^3.3.2",
     "fs-extra": "^11.2.0",
@@ -37,6 +49,7 @@
     "lint-staged": "^15.2.2",
     "postcss": "^8.4.38",
     "proptypes": "^1.1.0",
+    "storybook": "^8.2.6",
     "typescript": "^5.2.2",
     "unbuild": "^2.0.0",
     "unplugin-vue-components": "^0.27.0",
@@ -52,6 +65,11 @@
   "lint-staged": {
     "./**/*.{js, ts,vue,tsx, jsx, css, less, json}": [
       "eslint --fix"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
     ]
   }
 }
