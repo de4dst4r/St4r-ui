@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'Tov UI',
+  title: 'St4r UI',
   description: 'vue component library',
   rewrites: {
     'docs/(.*)': '(.*)',
@@ -29,6 +29,10 @@ export default defineConfig({
         {
           text: '输入框',
           link: '/components/input/',
+        },
+        {
+          text: '进度条',
+          link: '/components/progress/',
         },
         {
           text: 'Tooltip',

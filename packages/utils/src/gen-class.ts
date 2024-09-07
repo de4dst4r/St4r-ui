@@ -2,8 +2,7 @@ import classNames from 'classnames'
 import { computed } from 'vue'
 
 type BEMType = string | [string, 'B' | 'E' | 'M' | undefined]
-export function useClassnames(componentName: string) {
-  const prefix = 'tov'
+export function useClassnames(componentName: string, prefix = 'tov') {
   const componentClass = `${prefix}-${componentName}`
   const c = (...arg: BEMType[]) => {
     if (arg.length > 0) {
